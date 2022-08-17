@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Squada+One&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+
+    /*擴充專案的全站樣式*/
+    html {
+        font-family: "Squada One", "Noto Sans TC", system-ui, sans-serif;
+    }
+
+    a {
+        color: inherit;
+        display: block;
+    }
+    img{
+        object-fit: cover;
+    }
+}
+
+@layer components {
+    /*自組元件*/
+}
+
+@layer utilities {
+    .text-hidden {
+        text-indent: 101%;
+        overflow: hidden;
+        white-space: nowrap;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .text-TC{
+        font-family:"Noto Sans TC";
+    }
+    .text-vertical{
+        writing-mode:vertical-lr;
+    }
+    .orange-trian:before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border: 8px solid;
+        border-color: transparent #E6553B #E6553B transparent;
+    }
+
+    .black-trian:before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border: 8px solid;
+        border-color: transparent black black transparent;
+    }
+}
