@@ -485,7 +485,6 @@ html {
         font-family: "Squada One", "Noto Sans TC", system-ui, sans-serif;
     }
 a {
-        color: inherit;
         display: block;
     }
 img{
@@ -619,6 +618,9 @@ img{
 .h-\[372px\]{
   height: 372px;
 }
+.h-5{
+  height: 1.25rem;
+}
 .h-10{
   height: 2.5rem;
 }
@@ -628,8 +630,8 @@ img{
 .w-full{
   width: 100%;
 }
-.w-\[189px\]{
-  width: 189px;
+.w-\[85px\]{
+  width: 85px;
 }
 .w-1\/3{
   width: 33.333333%;
@@ -976,6 +978,9 @@ img{
   .lg\:h-full{
     height: 100%;
   }
+  .lg\:h-10{
+    height: 2.5rem;
+  }
   .lg\:w-full{
     width: 100%;
   }
@@ -993,6 +998,9 @@ img{
   }
   .lg\:w-1\/3{
     width: 33.333333%;
+  }
+  .lg\:w-\[190px\]{
+    width: 190px;
   }
   .lg\:flex-row-reverse{
     -webkit-box-orient: horizontal;
