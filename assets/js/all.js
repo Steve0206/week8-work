@@ -30,6 +30,73 @@ $(document).ready(function () {
     $(this).toggleClass('hidden');
     $('#m-menu').toggleClass('hidden');
     $('#m-menu-list').slideToggle();
+  }); //modal
+
+  $('#wallet').on('click', function (event) {
+    $('#modal-bg').removeClass('hidden');
   });
+  $('#wallet-link').on('click', function (event) {
+    $('#modal-bg').addClass('hidden');
+  }); //wallet
+
+  $('#wallet-check-meta').click(function (event) {
+    event.preventDefault();
+    $(this).toggleClass('border-orange');
+    $(this).find('span').toggleClass('text-orange');
+  });
+  $('#wallet-check-coin').click(function (event) {
+    event.preventDefault();
+    $(this).toggleClass('border-orange');
+    $(this).find('span').toggleClass('text-orange');
+  });
+  $('#wallet-check-connect').click(function (event) {
+    event.preventDefault();
+    $(this).toggleClass('border-orange');
+    $(this).find('span').toggleClass('text-orange');
+  });
+  $('#wallet-check-phan').click(function (event) {
+    event.preventDefault();
+    $(this).toggleClass('border-orange');
+    $(this).find('span').toggleClass('text-orange');
+  });
+  $('#wallet-check-glow').click(function (event) {
+    event.preventDefault();
+    $(this).toggleClass('border-orange');
+    $(this).find('span').toggleClass('text-orange');
+  });
+  $('#wallet-check-fart').click(function (event) {
+    event.preventDefault();
+    $(this).toggleClass('border-orange');
+    $(this).find('span').toggleClass('text-orange');
+  }); //swiper
+
+  var swiper = new Swiper('.swiper-container', {
+    breakpoints: {
+      1440: {
+        slidesPerView: 3
+      }
+    },
+    initialSlide: 1,
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    speed: 1000,
+    autoplay: {
+      delay: 2000
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    }
+  }); //滑鼠移過去停止撥動
+
+  swiper.el.onmouseover = function () {
+    swiper.autoplay.stop();
+  }; //滑鼠移開自動撥放
+
+
+  swiper.el.onmouseout = function () {
+    swiper.autoplay.start();
+  };
 });
 //# sourceMappingURL=all.js.map
