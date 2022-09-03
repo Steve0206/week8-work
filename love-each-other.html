@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>love-each-other</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body class="bg-bgcolor">
+
+  <header class="py-4 lg:py-0 border-b relative lg:fixed lg:top-0 lg:bg-bgcolor lg:w-full z-30">
+    <div class="container sm:container md:container lg:container xl:container 2xl:container flex justify-between lg:justify-start items-center">
+      <!--pc-->
+      <h1 class="lg:w-1/3 lg:py-8" id="h1">
+        <a href="index.html" class="text-hidden text-2xl md:text-3xl w-[85px] lg:w-[190px] h-5 lg:h-10 bg-[url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a42e625b3e98d0fe8ffa5f9f58096fb8326aa845/week8-202207/logo.svg)] h-10">ART NFT</a>
+      </h1>
+      <ul class="flex lg:hidden" id="m-search-list">
+        <li class="mr-6"><a href="#" id="m-search">
+          <span class="material-icons text-2xl font-bold md:text-3xl hover:text-orange duration-300">
+          search
+          </span></a></li>
+        <li>
+          <a href="#" id="m-menu">
+            <span class="material-icons text-2xl font-bold md:text-3xl hover:text-orange duration-300">
+              menu
+            </span>
+          </a>
+          <a href="#" id="close" class="hidden">
+            <span class="material-icons text-2xl font-bold md:text-3xl hover:text-orange duration-300">
+              close
+            </span>
+          </a>
+        </li>
+      </ul>
+      <!--手機搜尋-->
+      <div class="hidden w-full py-2" id="search-nav">
+        <a href="#" id="search-pre" class="text-2xl leading-none hover:text-orange duration-300">
+          <span class="material-icons block font-bold">
+            chevron_left
+          </span>
+        </a>
+        <input class="h-6 py-0 bg-bgcolor grow border-0 focus:ring-0" type="text" placeholder="搜尋作品名稱、藝術家名稱">
+        <a href="#" class="text-2xl leading-none hover:text-orange duration-300">
+          <span class="material-icons block font-bold">
+            search
+          </span>
+        </a>
+      </div>
+      <!--PC搜尋-->
+      <div class="w-1/3 hidden lg:flex lg:items-center px-12 lg:py-10 border-x">
+          <input class="h-6 py-0 bg-bgcolor mr-6 grow border-0 focus:ring-0" type="text" placeholder="搜尋作品名稱、藝術家名稱">
+          <a href="#" class="text-2xl leading-none hover:text-orange duration-300">
+            <span class="material-icons block font-bold">
+              search
+            </span>
+          </a>
+      </div>
+      <!--PC menu-->
+      <ul class="w-1/3 hidden lg:flex text-center">
+        <li class="w-2/5"><a href="explore.html" class="py-10 border-r border-black hover:text-orange duration-300">探索</a></li>
+        <li class="w-2/5"><a href="ranking.html" class="py-10 border-r border-black hover:text-orange duration-300">市值</a></li>
+        <li class="w-1/5"><a href="#" class="py-10 text-2xl leading-none hover:text-orange duration-300" id="wallet" data-modal-toggle="wallet-modal">
+            <i class="fa-solid fa-wallet block"></i></a>
+        </li>
+      </ul>
+    </div>
+    <!--mobile menu-->
+    <div id="m-menu-list" class="bg-white w-full absolute top-full border-t border-black hidden">
+      <div class="container sm:container md:container lg:container xl:container 2xl:container">
+        <ul class="pb-6 text-center">
+          <li><a href="explore.html" class="font-bold text-lg py-6 border-b border-black hover:text-orange duration-300">探索</a></li>
+          <li><a href="ranking.html" class="font-bold text-lg py-6 hover:text-orange duration-300">市值</a></li>
+          <li><a href="#"
+              class="text-lg py-3 text-white bg-orange border border-black hover:text-black hover:translate-y-0.5 duration-300" id="m-wallet" data-modal-toggle="wallet-modal">連結錢包</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="lg:pt-[104px]">
+  <section class="mt-6 lg:mt-10 mb-10">
+    <div class="container sm:container md:container lg:container xl:container 2xl:container">
+        <div class="lg:flex lg:mb-6 lg:-mx-3">
+            <div class="lg:w-1/2 lg:px-3 mb-6 lg:mb-0">
+                <img class="w-full"
+                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art21.jpg"
+                    alt="兩情相悅">
+            </div>
+            <div class="lg:w-1/2 lg:px-3 mb-6 lg:mb-0 flex">
+                <div class="bg-white border border-black grow">
+                    <div class="p-4 lg:px-10 border-b borde-black">
+                        <div class="lg:flex flex-row-reverse mb-4 justify-between">
+                            <p class="flex items-center mb-2 lg:mb-0"><img class="mr-2 w-8 h-8 rounded-full"
+                                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/artist01.jpg?raw=true"
+                                    alt="Michael">Michael</p>
+                            <h2 class="font-bold text-4xl lg:text-5xl">兩情相悅</h2>
+                        </div>
+                        <span class="block text-gray text-sm mb-2">最高出價</span>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <img class="w-8 h-8 rounded-full"
+                                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/user01.jpg"
+                                    alt="user01">
+                                <span class="material-icons mx-2">
+                                    east
+                                </span>
+                                <p>0.044Eth</p>
+                            </div>
+                            <a href="#" class="text-white text-lg py-2 px-12 bg-orange border border-black hover:scale-y-110">出價</a>
+                        </div>
+                    </div>
+                    <div class="px-4 lg:px-10 py-6 lg:py-8 space-y-4">
+                        <p>3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                        <p>而且其中一隻竟然有梳油頭，不知道是不是有用定型液，他們感情真好，出門還會特別打扮，看著看著不禁思考，我怎麼會變這樣？</p>
+                        <p>好羨慕啊，我也要有這樣兩情相悅的另一半。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="space-y-6 lg:space-y-0 lg:flex flex-col flex-wrap lg:gap-y-6 lg:-mx-3 lg:h-[586px]">
+            <!--1-->
+            <li class="lg:w-1/2 lg:px-3 order-1">
+                <div class="bg-white border border-black">
+                    <div class="p-4 lg:p-6 flex items-center justify-between border-b border-black">
+                        <h3 class="font-bold">屬性</h3>
+                        <a href="#" class="leading-none" id="attribute">
+                            <span class="material-icons">
+                                expand_less
+                            </span>
+                            <span class="material-icons hidden">
+                                expand_more
+                            </span>
+                        </a>
+                    </div>
+                    <ul class="px-4 py-6 lg:px-6" id="attribute-list">
+                        <li class="mb-2 pb-2 border-b border-gray flex items-center justify-between">品種<span class="text-gray">青藍金剛鸚鵡</span></li>
+                        <li class="mb-2 pb-2 border-b border-gray flex items-center justify-between">鳥的數量<span class="text-gray">2隻</span>
+                        </li>
+                        <li class="mb-2 pb-2 border-b border-gray flex items-center justify-between">是否有花草<span class="text-gray">是</span>
+                        </li>
+                        <li class="mb-2 flex items-center justify-between">鳥的顏色<span class="text-gray">藍色</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!--2-->
+            <li class="lg:w-1/2 lg:px-3 order-2">
+                <div class="bg-white border border-black">
+                    <div class="p-4 lg:p-6 flex items-center justify-between border-b border-black">
+                        <h3 class="font-bold">出價</h3>
+                        <a href="#" class="leading-none" id="sell">
+                            <span class="material-icons">
+                                expand_less
+                            </span>
+                            <span class="material-icons hidden">
+                                expand_more
+                            </span>
+                        </a>
+                    </div>
+                    <div class="px-4 py-6 lg:px-6" id="sell-list">
+                        <table class="table-auto w-full">
+                            <thead>
+                                <tr>
+                                    <th class="text-center lg:text-left lg:pl-4 font-normal text-sm bg-[#F0F0F0] w-1/2 py-2">價格</th>
+                                    <th class="text-center lg:text-left lg:pl-4 font-normal text-sm bg-[#F0F0F0] w-1/2 py-2">期限</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray">
+                                    <td class="flex items-center py-2">
+                                        <img class="w-8 h-8 rounded-full" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/artist03.jpg" alt="出價者">
+                                        <span class="material-icons mx-2">
+                                            arrow_forward
+                                        </span>
+                                        <p>0.044Eth</p>
+                                    </td>
+                                    <td class="text-gray text-right lg:text-left text-TC">3個月後</td>
+                                </tr>
+                                <tr class="border-b border-gray">
+                                    <td class="flex items-center py-2">
+                                        <img class="w-8 h-8 rounded-full"
+                                            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/user02.jpg"
+                                            alt="出價者">
+                                        <span class="material-icons mx-2">
+                                            arrow_forward
+                                        </span>
+                                        <p>0.054Eth</p>
+                                    </td>
+                                    <td class="text-gray text-right lg:text-left text-TC">1個月後</td>
+                                </tr>
+                                <tr>
+                                    <td class="flex items-center pt-2">
+                                        <img class="w-8 h-8 rounded-full"
+                                            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/user03.jpg"
+                                            alt="出價者">
+                                        <span class="material-icons mx-2">
+                                            arrow_forward
+                                        </span>
+                                        <p>0.044Eth</p>
+                                    </td>
+                                    <td class="text-gray text-right lg:text-left text-TC">2週後</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </li>
+            <!--3-->
+            <li class="lg:w-1/2 lg:px-3 order-1">
+                <div class="bg-white border border-black">
+                    <div class="p-4 lg:p-6 flex items-center justify-between border-b border-black">
+                        <h3 class="font-bold">基本資訊</h3>
+                        <a href="#" class="leading-none" id="base">
+                            <span class="material-icons">
+                                expand_less
+                            </span>
+                            <span class="material-icons hidden">
+                                expand_more
+                            </span>
+                        </a>
+                    </div>
+                    <ul class="px-4 py-6 lg:px-6" id="base-list">
+                        <li class="mb-2 pb-2 border-b border-gray flex items-center justify-between">擁有者<span
+                                class="text-gray text-TC">0xa543x…1283</span></li>
+                        <li class="mb-2 pb-2 border-b border-gray flex items-center justify-between">代幣ID<span
+                                class="text-gray text-TC">#1234</span>
+                        </li>
+                        <li class="mb-2 flex items-center justify-between">合約地址<span class="text-gray">青藍金剛鸚鵡</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!--4-->
+            <li class="lg:w-1/2 lg:px-3 order-2">
+                <div class="bg-white border border-black">
+                    <div class="p-4 lg:p-6 flex items-center justify-between border-b border-black">
+                        <h3 class="font-bold">交易歷史</h3>
+                        <a href="#" class="leading-none" id="trade">
+                            <span class="material-icons">
+                                expand_less
+                            </span>
+                            <span class="material-icons hidden">
+                                expand_more
+                            </span>
+                        </a>
+                    </div>
+                    <div class="px-4 py-6 lg:px-6" id="trade-list">
+                        <table class="table-auto w-full">
+                            <thead>
+                                <tr>
+                                    <th class="text-center font-normal text-sm bg-[#F0F0F0] py-2">事件</th>
+                                    <th class="text-center font-normal text-sm bg-[#F0F0F0] py-2">價格</th>
+                                    <th class="font-normal text-sm bg-[#F0F0F0] py-2">從</th>
+                                    <th class="font-normal text-sm bg-[#F0F0F0] py-2">時間</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray py-2">
+                                    <td class="py-2 text-center">上架</td>
+                                    <td class="text-TC py-2 text-center">2nb</td>
+                                    <td class="flex items-center py-2">
+                                        <img class="w-8 h-8 rounded-full"
+                                            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/artist02.jpg"
+                                            alt="上架者">
+                                        <p class="hidden lg:block ml-2">Antony WU</p>
+                                    </td>
+                                    <td class="text-gray text-TC py-2">14小時前</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2 text-center">上架</td>
+                                    <td class="text-TC py-2 text-center">2nb</td>
+                                    <td class="flex items-center py-2">
+                                        <img class="w-8 h-8 rounded-full"
+                                            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/artist03.jpg"
+                                            alt="出價者">
+                                        <p class="hidden lg:block ml-2">Antony WU</p>
+                                    </td>
+                                    <td class="text-gray text-TC py-2">2天前</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="mb-10 lg:mb-20">
+    <div class="container sm:container md:container lg:container xl:container 2xl:container overflow-hidden">
+        <div class="flex justify-between items-end border-b border-black mb-6 lg:mb-12">
+            <h2 class="text-4xl leading-none mb-2 lg:mb-4 ">Other
+                <span class="hidden lg:inline-block lg:text-xl ml-4">其餘作品</span></h2>
+            <a href="#"
+                class="text-lg px-12 py-2 leading-none relative orange-trian hover:text-white hover:bg-orange hover:black-rb-trian duration-300">MORE</a>
+        </div>
+        <div class="swiper-other">
+            <div class="swiper-wrapper">
+                <!--1-->
+                <div class="swiper-slide">
+                    <ul class="-mx-3 flex">
+                        <li class="px-3 w-1/2 lg:w-1/4 hidden lg:block flex flex-col">
+                            <div class="p-2 lg:p-6 bg-white grow">
+                                <img class="h-full"  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art22.jpg" alt="群聚的小鳥們">
+                            </div>
+                            <h3 class="py-4 lg:border-b border-black">群聚的小鳥們</h3>
+                        </li>
+                        <li class="px-3 w-1/2 lg:w-1/4 flex flex-col">
+                            <div class="p-2 lg:p-6 bg-white grow">
+                                <img class="h-full" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art27.jpg"
+                                    alt="我真的受傷了">
+                            </div>
+                            <h3 class="py-4 lg:border-b border-black">我真的受傷了</h3>
+                        </li>
+                        <li class="px-3 w-1/2 lg:w-1/4 flex flex-col">
+                            <div class="p-2 lg:p-6 bg-white grow">
+                                <img class="h-full" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art20.jpg"
+                                    alt="這兩隻也太像企鵝了吧">
+                            </div>
+                            <h3 class="py-4 lg:border-b border-black">這兩隻也太像企鵝了吧</h3>
+                        </li>
+                        <li class="px-3 w-1/2 lg:w-1/4 hidden lg:block flex flex-col">
+                            <div class="p-2 lg:p-6 bg-white grow">
+                                <img class="h-full" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art22.jpg"
+                                    alt="群聚囉～小鳥">
+                            </div>
+                            <h3 class="py-4 lg:border-b border-black">群聚囉～小鳥</h3>
+                        </li>
+                    </ul>
+                </div>
+                <!--2-->
+                <div class="swiper-slide">
+                    <ul class="-mx-3 flex">
+                        <li class="px-3 w-1/2 lg:w-1/4 flex flex-col">
+                            <div class="p-2 lg:p-6 bg-white grow">
+                                <img class="h-full"
+                                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art20.jpg"
+                                    alt="這兩隻也太像企鵝了吧">
+                            </div>
+                            <h3 class="py-4 lg:border-b border-black">這兩隻也太像企鵝了吧</h3>
+                        </li>
+                        <li class="px-3 w-1/2 lg:w-1/4 flex flex-col">
+                            <div class="p-2 lg:p-6 bg-white grow">
+                                <img class="h-full" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art27.jpg"
+                                    alt="我真的受傷了">
+                            </div>
+                            <h3 class="py-4 lg:border-b border-black">我真的受傷了</h3>
+                        </li>
+                        <li class="px-3 w-1/2 lg:w-1/4 hidden lg:block flex flex-col">
+                            <div class="p-2 lg:p-6 bg-white grow">
+                                <img class="h-full"
+                                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art20.jpg"
+                                    alt="這兩隻也太像企鵝了吧">
+                            </div>
+                            <h3 class="py-4 lg:border-b border-black">這兩隻也太像企鵝了吧</h3>
+                        </li>
+                        <li class="px-3 w-1/2 lg:w-1/4 hidden lg:block flex flex-col">
+                            <div class="p-2 lg:p-6 bg-white grow">
+                                <img class="h-full" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art22.jpg"
+                                    alt="群聚囉～小鳥">
+                            </div>
+                            <h3 class="py-4 lg:border-b border-black">群聚囉～小鳥</h3>
+                        </li>
+                    </ul>
+                </div>
+                <!--3-->
+                <div class="swiper-slide">
+                    <ul class="-mx-3 flex">
+                        <li class="px-3 w-1/2 lg:w-1/4 flex flex-col">
+                            <div class="p-2 lg:p-6 bg-white grow">
+                                <img class="h-full" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art22.jpg"
+                                    alt="群聚的小鳥們">
+                            </div>
+                            <h3 class="py-4 lg:border-b border-black">群聚的小鳥們</h3>
+                        </li>
+                        <li class="px-3 w-1/2 lg:w-1/4 hidden lg:block flex flex-col">
+                            <div class="p-2 lg:p-6 bg-white grow">
+                                <img class="h-full"
+                                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art27.jpg"
+                                    alt="我真的受傷了">
+                            </div>
+                            <h3 class="py-4 lg:border-b border-black">我真的受傷了</h3>
+                        </li>
+                        <li class="px-3 w-1/2 lg:w-1/4 flex flex-col">
+                            <div class="p-2 lg:p-6 bg-white grow">
+                                <img class="h-full" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art20.jpg"
+                                    alt="這兩隻也太像企鵝了吧">
+                            </div>
+                            <h3 class="py-4 lg:border-b border-black">這兩隻也太像企鵝了吧</h3>
+                        </li>
+                        <li class="px-3 w-1/2 lg:w-1/4 hidden lg:block flex flex-col">
+                            <div class="p-2 lg:p-6 bg-white grow">
+                                <img class="h-full"
+                                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art27.jpg"
+                                    alt="我真的受傷了">
+                            </div>
+                            <h3 class="py-4 lg:border-b border-black">我真的受傷了</h3>
+                        </li>
+                    </ul>
+                </div>
+                <!--4-->
+                <div class="swiper-slide">
+                    <ul class="-mx-3 flex">
+                        <li class="px-3 w-1/2 lg:w-1/4 flex flex-col">
+                            <div class="p-2 lg:p-6 bg-white grow">
+                                <img class="h-full" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art27.jpg"
+                                    alt="我真的受傷了">
+                            </div>
+                            <h3 class="py-4 lg:border-b border-black">我真的受傷了</h3>
+                        </li>
+                        <li class="px-3 w-1/2 lg:w-1/4 hidden lg:block flex flex-col">
+                            <div class="p-2 lg:p-6 bg-white grow">
+                                <img class="h-full"
+                                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art22.jpg"
+                                    alt="群聚的小鳥們">
+                            </div>
+                            <h3 class="py-4 lg:border-b border-black">群聚的小鳥們</h3>
+                        </li>
+                        <li class="px-3 w-1/2 lg:w-1/4 hidden lg:block flex flex-col">
+                            <div class="p-2 lg:p-6 bg-white grow">
+                                <img class="h-full"
+                                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art20.jpg"
+                                    alt="這兩隻也太像企鵝了吧">
+                            </div>
+                            <h3 class="py-4 lg:border-b border-black">這兩隻也太像企鵝了吧</h3>
+                        </li>
+                        <li class="px-3 w-1/2 lg:w-1/4 flex flex-col">
+                            <div class="p-2 lg:p-6 bg-white grow">
+                                <img class="h-full" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art22.jpg"
+                                    alt="群聚囉～小鳥">
+                            </div>
+                            <h3 class="py-4 lg:border-b border-black">群聚囉～小鳥</h3>
+                        </li>
+                    </ul>
+                </div>
+        
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination mt-6 lg:mt-12">
+                <span class="swiper-pagination-bullet"></span>
+                <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                <span class="swiper-pagination-bullet"></span>
+                <span class="swiper-pagination-bullet"></span>
+            </div>
+        </div>
+    </div>
+</section>
+  </main>
+  <footer class="border-t border-black pt-2">
+    <p class="border-t-4 border-black py-6 text-center text-TC">© ART NFT. All Rights Reserved</p>
+  </footer>
+  
+  <!--modal-->
+  <div id="wallet-modal" tabindex="-1" aria-hidden="true"
+    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full h-full inset-0 h-modal border-orange">
+    <div class="relative w-full max-w-lg h-full lg:h-auto">
+      <!-- Modal content -->
+      <div class="relative bg-white shadow h-full flex flex-col">
+        <!--Modal header-->
+        <div class=" px-2 lg:px-4 py-4 border-b boder-black">
+          <h2 class="text-center text-xl relative">連結你的錢包</h2>
+          <button type="button" id="wallet-close"
+            class="absolute top-3 right-2.5 text-black hover:text-gray rounded-lg text-sm p-1.5 ml-auto inline-flex items-center"
+            data-modal-toggle="wallet-modal">
+            <span class="material-icons text-black hover:scale-105">
+              close
+            </span>
+            <span class="sr-only">Close modal</span>
+          </button>
+        </div>
+        <!-- Modal body -->
+        <ul class="grow lg:grow-0 bg-white py-6 px-3 lg:px-4 space-y-2 lg:space-y-0 lg:flex flex-wrap lg:gap-2">
+          <li class="lg:w-[calc((100%-8px)/2)]">
+            <a href="#" id="wallet-check-meta" class="flex items-center justify-between p-4 border hover:border-orange duration-300">
+              <div class="flex items-center">
+                <img class="w-8 h-8" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/logo/connect01.png" alt="MetaMask">
+                <p class="ml-4 text-4">MetaMask</p>
+              </div>
+              <span class="material-icons text-white duration-300">
+                done
+              </span>
+            </a>
+          </li>
+          <li class="lg:w-[calc((100%-8px)/2)]">
+            <a href="#" id="wallet-check-coin" class="flex items-center justify-between p-4 border hover:border-orange duration-300">
+              <div class="flex items-center">
+                <img class="w-8 h-8"
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/logo/connect02.png"
+                  alt="Coinbase Wallet">
+                <p class="ml-4 text-4">Coinbase Wallet</p>
+              </div>
+              <span class="material-icons text-white duration-300">
+                done
+              </span>
+            </a>
+          </li>
+          <li class="lg:w-[calc((100%-8px)/2)]">
+            <a href="#" id="wallet-check-connect" class="flex items-center justify-between p-4 border hover:border-orange duration-300">
+              <div class="flex items-center">
+                <img class="w-8 h-8"
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/logo/connect03.png"
+                  alt="WalletConnect">
+                <p class="ml-4 text-4">WalletConnect</p>
+              </div>
+              <span class="material-icons text-white duration-300">
+                done
+              </span>
+            </a>
+          </li>
+          <li class="lg:w-[calc((100%-8px)/2)]">
+            <a href="#" id="wallet-check-phan" class="flex items-center justify-between p-4 border hover:border-orange duration-300">
+              <div class="flex items-center">
+                <img class="w-8 h-8"
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/logo/connect04.png"
+                  alt="Phantom">
+                <p class="ml-4 text-4">Phantom</p>
+              </div>
+              <span class="material-icons text-white duration-300">
+                done
+              </span>
+            </a>
+          </li>
+          <li class="lg:w-[calc((100%-8px)/2)]">
+            <a href="#" id="wallet-check-glow" class="flex items-center justify-between p-4 border hover:border-orange duration-300">
+              <div class="flex items-center">
+                <img class="w-8 h-8"
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/logo/connect05.png"
+                  alt="Glow">
+                <p class="ml-4 text-4">Glow</p>
+              </div>
+              <span class="material-icons text-white duration-300">
+                done
+              </span>
+            </a>
+          </li>
+          <li class="lg:w-[calc((100%-8px)/2)]">
+            <a href="#" id="wallet-check-fart" class="flex items-center justify-between p-4 border hover:border-orange duration-300">
+              <div class="flex items-center">
+                <img class="w-8 h-8"
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/logo/connect06.png"
+                  alt="Fortmatic">
+                <p class="ml-4 text-4">Fortmatic</p>
+              </div>
+              <span class="material-icons text-white duration-300">
+                done
+              </span>
+            </a>
+          </li>
+        </ul>
+        <!-- Modal footer -->
+        <div class="lg:mb-8">
+          <a href="#" id="wallet-link"
+            class="text-lg text-center py-3 text-white bg-orange border border-black lg:w-1/2 lg:mx-auto hover:text-black hover:scale-y-105 duration-300"
+            data-modal-toggle="wallet-modal">連結錢包</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-bg" class="hidden bg-black bg-opacity-50 fixed inset-0 z-30"></div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+  <script src="https://kit.fontawesome.com/83939e0235.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
