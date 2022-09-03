@@ -1,0 +1,693 @@
+---
+title: Ranking
+layout: ./app/layout.ejs
+engine: ejs
+current: Ranking
+---
+
+<section class="mt-6 lg:mt-10 mb-10 lg:mb-20">
+    <div class="container sm:container md:container lg:container xl:container 2xl:container">
+        <h2 class="font-bold text-4xl lg:text-4xl text-center">市價排行榜</h2>
+        <p class="mt-4 lg:mt-6 mb-8 lg:mb-12 text-center">NFT系列藝術作品排行榜！全球注目指標</p>
+
+        <table class="table-auto border-collapse w-full">
+            <thead class="hidden lg:block w-full">
+                <tr class="w-full flex text-left mb-4">
+                    <th class="w-[5%]"></th>
+                    <th class="grow font-normal">系列作品名稱</th>
+                    <th class="w-[10%] font-normal text-center">價值</th>
+                    <th class="text-TC w-[10%] font-normal text-center">24h%</th>
+                    <th class="text-TC w-[10%] font-normal text-center">7d%</th>
+                    <th class="w-[10%] font-normal text-center">地板價</th>
+                    <th class="w-[10%] font-normal text-center">擁有者</th>
+                    <th class="w-[10%] font-normal text-center">作品數量</th>
+                </tr>
+            </thead>
+            <tbody class="bg-white">
+                <!--1-->
+                <tr class="flex items-center border border-black relative w-full">
+                    <td class="text-2xl text-center text-paytone w-1/5 lg:w-[5%] h-[83px] flex items-center justify-center border-r border-black mr-2 lg:mr-4">1</td>
+                    <td class="py-4 flex items-center font-bold text-sm lg:text-base w-3/5 lg:w-auto grow">
+                        <img class="rounded-full w-12 h-12 mr-2 lg:mr-4" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art29.jpg" alt="追求者送我的花">
+                        追求者送我的花
+                    </td>
+                    <td class="py-4 flex items-center text-xl w-2/5 lg:w-[10%] text-center">
+                        <i class="fa-brands fa-ethereum mr-2"></i>
+                        1,774.19
+                    </td>
+                    <td class="hidden lg:block py-4 text-green text-xl w-[10%] text-center">+220.49%</td>
+                    <td class="hidden lg:block py-4 text-orange text-xl w-[10%] text-center">-2.43%</td>
+                    <td class="hidden lg:flex py-4 items-center text-xl w-[10%] justify-center">
+                        <i class="fa-brands fa-ethereum mr-2"></i>
+                        2.90
+                    </td>
+                    <td class="hidden lg:block py-4 text-xl w-[10%] text-center">32.1K</td>
+                    <td class="hidden lg:block py-4 text-xl w-[10%] text-center">1000</td>
+                    <td>
+                        <a href="#" id="add-1" class="black-rb-big-trian w-[16px] h-[16px] absolute right-0 bottom-0 text-white lg:hidden">
+                            <span class="material-icons text-xl absolute right-0 bottom-0">add</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#" id="remove-1" class="orange-rb-big-trian w-[16px] h-[16px] absolute right-0 bottom-0 text-white hidden lg:hidden">
+                            <span class="material-icons text-xl absolute right-0 bottom-0">remove</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr class="lg:hidden border-l border-r border-black py-4 w-full hidden" id="tr-1">
+                    <td class="flex items-center justify-center flex-wrap py-4">
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm text-TC">24h%</p>
+                            <p class="text-green text-xl">+220.49%</p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm text-TC">7d%</p>
+                            <p class="text-orange text-xl">-2.43%</p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">地板價</p>
+                            <p class="flex items-center text-xl justify-center">
+                                <i class="fa-brands fa-ethereum mr-2"></i>
+                                2.90
+                            </p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">擁有者</p>
+                            <p class="flex items-center text-xl justify-center">
+                                32.1K
+                            </p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">作品數量</p>
+                            <p class="flex items-center text-xl justify-center">
+                                1000
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <!--2-->
+                <tr class="flex items-center border border-black relative w-full">
+                    <td
+                        class="text-2xl text-center text-paytone w-1/5 lg:w-[5%] h-[83px] flex items-center justify-center border-r border-black mr-2 lg:mr-4">
+                        2</td>
+                    <td class="py-4 flex items-center font-bold text-sm lg:text-base w-3/5 lg:w-auto grow">
+                        <img class="rounded-full w-12 h-12 mr-2 lg:mr-4"
+                            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art06.jpg"
+                            alt="夏天的時候">
+                        夏天的時候
+                    </td>
+                    <td class="py-4 flex items-center text-xl w-2/5 lg:w-[10%] text-center">
+                        <i class="fa-brands fa-ethereum mr-2"></i>
+                        1,524.89
+                    </td>
+                    <td class="hidden lg:block py-4 text-green text-xl w-[10%] text-center">+80.49%</td>
+                    <td class="hidden lg:block py-4 text-orange text-xl w-[10%] text-center">-2.43%</td>
+                    <td class="hidden lg:flex py-4 items-center text-xl w-[10%] justify-center">
+                        90.23
+                    </td>
+                    <td class="hidden lg:block py-4 text-xl w-[10%] text-center">32.1K</td>
+                    <td class="hidden lg:block py-4 text-xl w-[10%] text-center">1000</td>
+                    <td>
+                        <a href="#" id="add-2"
+                            class="black-rb-big-trian w-[16px] h-[16px] absolute right-0 bottom-0 text-white lg:hidden">
+                            <span class="material-icons text-xl absolute right-0 bottom-0">add</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#" id="remove-2"
+                            class="orange-rb-big-trian w-[16px] h-[16px] absolute right-0 bottom-0 text-white hidden lg:hidden">
+                            <span class="material-icons text-xl absolute right-0 bottom-0">remove</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr class="lg:hidden border-l border-r border-black py-4 w-full hidden" id="tr-2">
+                    <td class="flex items-center justify-center flex-wrap py-4">
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm text-TC">24h%</p>
+                            <p class="text-green text-xl">+80.49%</p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm text-TC">7d%</p>
+                            <p class="text-orange text-xl">-2.43%</p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">地板價</p>
+                            <p class="flex items-center text-xl justify-center">
+                                90.23
+                            </p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">擁有者</p>
+                            <p class="flex items-center text-xl justify-center">
+                                32.1K
+                            </p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">作品數量</p>
+                            <p class="flex items-center text-xl justify-center">
+                                1000
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <!--3-->
+                <tr class="flex items-center border border-black relative w-full">
+                    <td
+                        class="text-2xl text-center text-paytone w-1/5 lg:w-[5%] h-[83px] flex items-center justify-center border-r border-black mr-2 lg:mr-4">
+                        3</td>
+                    <td class="py-4 flex items-center font-bold text-sm lg:text-base w-3/5 lg:w-auto grow">
+                        <img class="rounded-full w-12 h-12 mr-2 lg:mr-4"
+                            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art02.jpg"
+                            alt="海洋波度">
+                        海洋波度
+                    </td>
+                    <td class="py-4 flex items-center text-xl w-2/5 lg:w-[10%] text-center">
+                        <i class="fa-brands fa-ethereum mr-2"></i>
+                        1,400.59
+                    </td>
+                    <td class="hidden lg:block py-4 text-orange text-xl w-[10%] text-center">-3.92%</td>
+                    <td class="hidden lg:block py-4 text-orange text-xl w-[10%] text-center">-13.43%</td>
+                    <td class="hidden lg:flex py-4 items-center text-xl w-[10%] justify-center">
+                        <i class="fa-brands fa-ethereum mr-2"></i>
+                        2.90
+                    </td>
+                    <td class="hidden lg:block py-4 text-xl w-[10%] text-center">32.1K</td>
+                    <td class="hidden lg:block py-4 text-xl w-[10%] text-center">1000</td>
+                    <td>
+                        <a href="#" id="add-3"
+                            class="black-rb-big-trian w-[16px] h-[16px] absolute right-0 bottom-0 text-white lg:hidden">
+                            <span class="material-icons text-xl absolute right-0 bottom-0">add</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#" id="remove-3"
+                            class="orange-rb-big-trian w-[16px] h-[16px] absolute right-0 bottom-0 text-white hidden lg:hidden">
+                            <span class="material-icons text-xl absolute right-0 bottom-0">remove</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr class="lg:hidden border-l border-r border-black py-4 w-full hidden" id="tr-3">
+                    <td class="flex items-center justify-center flex-wrap py-4">
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm text-TC">24h%</p>
+                            <p class="text-orange text-xl">-3.92%</p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm text-TC">7d%</p>
+                            <p class="text-orange text-xl">--13.43%</p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">地板價</p>
+                            <p class="flex items-center text-xl justify-center">
+                                <i class="fa-brands fa-ethereum mr-2"></i>
+                                2.90
+                            </p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">擁有者</p>
+                            <p class="flex items-center text-xl justify-center">
+                                32.1K
+                            </p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">作品數量</p>
+                            <p class="flex items-center text-xl justify-center">
+                                1000
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <!--4-->
+                <tr class="flex items-center border border-black relative w-full">
+                    <td
+                        class="text-2xl text-center text-paytone w-1/5 lg:w-[5%] h-[83px] flex items-center justify-center border-r border-black mr-2 lg:mr-4">
+                        4</td>
+                    <td class="py-4 flex items-center font-bold text-sm lg:text-base w-3/5 lg:w-auto grow">
+                        <img class="rounded-full w-12 h-12 mr-2 lg:mr-4"
+                            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art03.jpg"
+                            alt="賴床真的很不好">
+                        賴床真的很不好
+                    </td>
+                    <td class="py-4 flex items-center text-xl w-2/5 lg:w-[10%] text-center">
+                        <i class="fa-brands fa-ethereum mr-2"></i>
+                        1,224.88
+                    </td>
+                    <td class="hidden lg:block py-4 text-orange text-xl w-[10%] text-center">-9.23%%</td>
+                    <td class="hidden lg:block py-4 text-orange text-xl w-[10%] text-center">-20.43%%</td>
+                    <td class="hidden lg:flex py-4 items-center text-xl w-[10%] justify-center">
+                        <i class="fa-brands fa-ethereum mr-2"></i>
+                        2.90
+                    </td>
+                    <td class="hidden lg:block py-4 text-xl w-[10%] text-center">32.1K</td>
+                    <td class="hidden lg:block py-4 text-xl w-[10%] text-center">1000</td>
+                    <td>
+                        <a href="#" id="add-4"
+                            class="black-rb-big-trian w-[16px] h-[16px] absolute right-0 bottom-0 text-white lg:hidden">
+                            <span class="material-icons text-xl absolute right-0 bottom-0">add</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#" id="remove-4"
+                            class="orange-rb-big-trian w-[16px] h-[16px] absolute right-0 bottom-0 text-white hidden lg:hidden">
+                            <span class="material-icons text-xl absolute right-0 bottom-0">remove</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr class="lg:hidden border-l border-r border-black py-4 w-full hidden" id="tr-4">
+                    <td class="flex items-center justify-center flex-wrap py-4">
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm text-TC">24h%</p>
+                            <p class="text-orange text-xl">-9.23%</p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm text-TC">7d%</p>
+                            <p class="text-orange text-xl">-20.43%</p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">地板價</p>
+                            <p class="flex items-center text-xl justify-center">
+                                <i class="fa-brands fa-ethereum mr-2"></i>
+                                2.90
+                            </p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">擁有者</p>
+                            <p class="flex items-center text-xl justify-center">
+                                32.1K
+                            </p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">作品數量</p>
+                            <p class="flex items-center text-xl justify-center">
+                                1000
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <!--5-->
+                <tr class="flex items-center border border-black relative w-full">
+                    <td
+                        class="text-2xl text-center text-paytone w-1/5 lg:w-[5%] h-[83px] flex items-center justify-center border-r border-black mr-2 lg:mr-4">
+                        5</td>
+                    <td class="py-4 flex items-center font-bold text-sm lg:text-base w-3/5 lg:w-auto grow">
+                        <img class="rounded-full w-12 h-12 mr-2 lg:mr-4"
+                            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art01.jpg"
+                            alt="瞳孔:流動的脈絡">
+                        瞳孔:流動的脈絡
+                    </td>
+                    <td class="py-4 flex items-center text-xl w-2/5 lg:w-[10%] text-center">
+                        <i class="fa-brands fa-ethereum mr-2"></i>
+                        1,021.09
+                    </td>
+                    <td class="hidden lg:block py-4 text-green text-xl w-[10%] text-center">+83.49%</td>
+                    <td class="hidden lg:block py-4 text-orange text-xl w-[10%] text-center">-1.43%</td>
+                    <td class="hidden lg:flex py-4 items-center text-xl w-[10%] justify-center">
+                        <i class="fa-brands fa-ethereum mr-2"></i>
+                        2.90
+                    </td>
+                    <td class="hidden lg:block py-4 text-xl w-[10%] text-center">32.1K</td>
+                    <td class="hidden lg:block py-4 text-xl w-[10%] text-center">1000</td>
+                    <td>
+                        <a href="#" id="add-5"
+                            class="black-rb-big-trian w-[16px] h-[16px] absolute right-0 bottom-0 text-white lg:hidden">
+                            <span class="material-icons text-xl absolute right-0 bottom-0">add</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#" id="remove-5"
+                            class="orange-rb-big-trian w-[16px] h-[16px] absolute right-0 bottom-0 text-white hidden lg:hidden">
+                            <span class="material-icons text-xl absolute right-0 bottom-0">remove</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr class="lg:hidden border-l border-r border-black py-4 w-full hidden" id="tr-5">
+                    <td class="flex items-center justify-center flex-wrap py-4">
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm text-TC">24h%</p>
+                            <p class="text-green text-xl">+83.49%</p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm text-TC">7d%</p>
+                            <p class="text-orange text-xl">-1.43%</p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">地板價</p>
+                            <p class="flex items-center text-xl justify-center">
+                                <i class="fa-brands fa-ethereum mr-2"></i>
+                                2.90
+                            </p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">擁有者</p>
+                            <p class="flex items-center text-xl justify-center">
+                                32.1K
+                            </p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">作品數量</p>
+                            <p class="flex items-center text-xl justify-center">
+                                1000
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <!--6-->
+                <tr class="flex items-center border border-black relative w-full">
+                    <td
+                        class="text-2xl text-center text-paytone w-1/5 lg:w-[5%] h-[83px] flex items-center justify-center border-r border-black mr-2 lg:mr-4">
+                        6</td>
+                    <td class="py-4 flex items-center font-bold text-sm lg:text-base w-3/5 lg:w-auto grow">
+                        <img class="rounded-full w-12 h-12 mr-2 lg:mr-4"
+                            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art12.jpg"
+                            alt="哭泣的時候">
+                        哭泣的時候
+                    </td>
+                    <td class="py-4 flex items-center text-xl w-2/5 lg:w-[10%] text-center">
+                        <i class="fa-brands fa-ethereum mr-2"></i>
+                        921.42
+                    </td>
+                    <td class="hidden lg:block py-4 text-orange text-xl w-[10%] text-center">-9.43%</td>
+                    <td class="hidden lg:block py-4 text-green text-xl w-[10%] text-center">+183.49%</td>
+                    <td class="hidden lg:flex py-4 items-center text-xl w-[10%] justify-center">
+                        <i class="fa-brands fa-ethereum mr-2"></i>
+                        2.90
+                    </td>
+                    <td class="hidden lg:block py-4 text-xl w-[10%] text-center">32.1K</td>
+                    <td class="hidden lg:block py-4 text-xl w-[10%] text-center">1000</td>
+                    <td>
+                        <a href="#" id="add-6"
+                            class="black-rb-big-trian w-[16px] h-[16px] absolute right-0 bottom-0 text-white lg:hidden">
+                            <span class="material-icons text-xl absolute right-0 bottom-0">add</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#" id="remove-6"
+                            class="orange-rb-big-trian w-[16px] h-[16px] absolute right-0 bottom-0 text-white hidden lg:hidden">
+                            <span class="material-icons text-xl absolute right-0 bottom-0">remove</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr class="lg:hidden border-l border-r border-black py-4 w-full hidden" id="tr-6">
+                    <td class="flex items-center justify-center flex-wrap py-4">
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm text-TC">24h%</p>
+                            <p class="text-orange text-xl">-9.43%</p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm text-TC">7d%</p>
+                            <p class="text-green text-xl">+183.49%</p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">地板價</p>
+                            <p class="flex items-center text-xl justify-center">
+                                <i class="fa-brands fa-ethereum mr-2"></i>
+                                2.90
+                            </p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">擁有者</p>
+                            <p class="flex items-center text-xl justify-center">
+                                32.1K
+                            </p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">作品數量</p>
+                            <p class="flex items-center text-xl justify-center">
+                                1000
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <!--7-->
+                <tr class="flex items-center border border-black relative w-full">
+                    <td
+                        class="text-2xl text-center text-paytone w-1/5 lg:w-[5%] h-[83px] flex items-center justify-center border-r border-black mr-2 lg:mr-4">
+                        7</td>
+                    <td class="py-4 flex items-center font-bold text-sm lg:text-base w-3/5 lg:w-auto grow">
+                        <img class="rounded-full w-12 h-12 mr-2 lg:mr-4"
+                            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art14.jpg"
+                            alt="破碎的菠蘿麵包">
+                        破碎的菠蘿麵包
+                    </td>
+                    <td class="py-4 flex items-center text-xl w-2/5 lg:w-[10%] text-center">
+                        <i class="fa-brands fa-ethereum mr-2"></i>
+                        1,774.19
+                    </td>
+                    <td class="hidden lg:block py-4 text-green text-xl w-[10%] text-center">+20.49%</td>
+                    <td class="hidden lg:block py-4 text-orange text-xl w-[10%] text-center">-0.43%</td>
+                    <td class="hidden lg:flex py-4 items-center text-xl w-[10%] justify-center">
+                        <i class="fa-brands fa-ethereum mr-2"></i>
+                        2.90
+                    </td>
+                    <td class="hidden lg:block py-4 text-xl w-[10%] text-center">32.1K</td>
+                    <td class="hidden lg:block py-4 text-xl w-[10%] text-center">1000</td>
+                    <td>
+                        <a href="#" id="add-7"
+                            class="black-rb-big-trian w-[16px] h-[16px] absolute right-0 bottom-0 text-white lg:hidden">
+                            <span class="material-icons text-xl absolute right-0 bottom-0">add</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#" id="remove-7"
+                            class="orange-rb-big-trian w-[16px] h-[16px] absolute right-0 bottom-0 text-white hidden lg:hidden">
+                            <span class="material-icons text-xl absolute right-0 bottom-0">remove</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr class="lg:hidden border-l border-r border-black py-4 w-full hidden" id="tr-7">
+                    <td class="flex items-center justify-center flex-wrap py-4">
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm text-TC">24h%</p>
+                            <p class="text-green text-xl">+20.49%</p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm text-TC">7d%</p>
+                            <p class="text-orange text-xl">-0.43%</p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">地板價</p>
+                            <p class="flex items-center text-xl justify-center">
+                                <i class="fa-brands fa-ethereum mr-2"></i>
+                                2.90
+                            </p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">擁有者</p>
+                            <p class="flex items-center text-xl justify-center">
+                                32.1K
+                            </p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">作品數量</p>
+                            <p class="flex items-center text-xl justify-center">
+                                1000
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <!--8-->
+                <tr class="flex items-center border border-black relative w-full">
+                    <td
+                        class="text-2xl text-center text-paytone w-1/5 lg:w-[5%] h-[83px] flex items-center justify-center border-r border-black mr-2 lg:mr-4">
+                        8</td>
+                    <td class="py-4 flex items-center font-bold text-sm lg:text-base w-3/5 lg:w-auto grow">
+                        <img class="rounded-full w-12 h-12 mr-2 lg:mr-4"
+                            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art08.jpg"
+                            alt="人生中的貓咪們">
+                        人生中的貓咪們
+                    </td>
+                    <td class="py-4 flex items-center text-xl w-2/5 lg:w-[10%] text-center">
+                        <i class="fa-brands fa-ethereum mr-2"></i>
+                        770.23
+                    </td>
+                    <td class="hidden lg:block py-4 text-green text-xl w-[10%] text-center">+32.49%</td>
+                    <td class="hidden lg:block py-4 text-green text-xl w-[10%] text-center">+30.23</td>
+                    <td class="hidden lg:flex py-4 items-center text-xl w-[10%] justify-center">
+                        <i class="fa-brands fa-ethereum mr-2"></i>
+                        2.90
+                    </td>
+                    <td class="hidden lg:block py-4 text-xl w-[10%] text-center">32.1K</td>
+                    <td class="hidden lg:block py-4 text-xl w-[10%] text-center">1000</td>
+                    <td>
+                        <a href="#" id="add-8"
+                            class="black-rb-big-trian w-[16px] h-[16px] absolute right-0 bottom-0 text-white lg:hidden">
+                            <span class="material-icons text-xl absolute right-0 bottom-0">add</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#" id="remove-8"
+                            class="orange-rb-big-trian w-[16px] h-[16px] absolute right-0 bottom-0 text-white hidden lg:hidden">
+                            <span class="material-icons text-xl absolute right-0 bottom-0">remove</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr class="lg:hidden border-l border-r border-black py-4 w-full hidden" id="tr-8">
+                    <td class="flex items-center justify-center flex-wrap py-4">
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm text-TC">24h%</p>
+                            <p class="text-green text-xl">+32.49%</p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm text-TC">7d%</p>
+                            <p class="text-green text-xl">+30.23</p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">地板價</p>
+                            <p class="flex items-center text-xl justify-center">
+                                <i class="fa-brands fa-ethereum mr-2"></i>
+                                2.90
+                            </p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">擁有者</p>
+                            <p class="flex items-center text-xl justify-center">
+                                32.1K
+                            </p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">作品數量</p>
+                            <p class="flex items-center text-xl justify-center">
+                                1000
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <!--9-->
+                <tr class="flex items-center border border-black relative w-full">
+                    <td
+                        class="text-2xl text-center text-paytone w-1/5 lg:w-[5%] h-[83px] flex items-center justify-center border-r border-black mr-2 lg:mr-4">
+                        9</td>
+                    <td class="py-4 flex items-center font-bold text-sm lg:text-base w-3/5 lg:w-auto grow">
+                        <img class="rounded-full w-12 h-12 mr-2 lg:mr-4"
+                            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art28.jpg"
+                            alt="髒兮兮的家">
+                        髒兮兮的家
+                    </td>
+                    <td class="py-4 flex items-center text-xl w-2/5 lg:w-[10%] text-center">
+                        <i class="fa-brands fa-ethereum mr-2"></i>
+                        502.31
+                    </td>
+                    <td class="hidden lg:block py-4 text-green text-xl w-[10%] text-center">+13.49%</td>
+                    <td class="hidden lg:block py-4 text-green text-xl w-[10%] text-center">+50.23</td>
+                    <td class="hidden lg:flex py-4 items-center text-xl w-[10%] justify-center">
+                        <i class="fa-brands fa-ethereum mr-2"></i>
+                        2.90
+                    </td>
+                    <td class="hidden lg:block py-4 text-xl w-[10%] text-center">32.1K</td>
+                    <td class="hidden lg:block py-4 text-xl w-[10%] text-center">1000</td>
+                    <td>
+                        <a href="#" id="add-9"
+                            class="black-rb-big-trian w-[16px] h-[16px] absolute right-0 bottom-0 text-white lg:hidden">
+                            <span class="material-icons text-xl absolute right-0 bottom-0">add</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#" id="remove-9"
+                            class="orange-rb-big-trian w-[16px] h-[16px] absolute right-0 bottom-0 text-white hidden lg:hidden">
+                            <span class="material-icons text-xl absolute right-0 bottom-0">remove</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr class="lg:hidden border-l border-r border-black py-4 w-full hidden" id="tr-9">
+                    <td class="flex items-center justify-center flex-wrap py-4">
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm text-TC">24h%</p>
+                            <p class="text-green text-xl">+13.49%</p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm text-TC">7d%</p>
+                            <p class="text-green text-xl">+50.23</p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">地板價</p>
+                            <p class="flex items-center text-xl justify-center">
+                                <i class="fa-brands fa-ethereum mr-2"></i>
+                                2.90
+                            </p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">擁有者</p>
+                            <p class="flex items-center text-xl justify-center">
+                                32.1K
+                            </p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">作品數量</p>
+                            <p class="flex items-center text-xl justify-center">
+                                1000
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <!--10-->
+                <tr class="flex items-center border border-black relative w-full">
+                    <td
+                        class="text-2xl text-center text-paytone w-1/5 lg:w-[5%] h-[83px] flex items-center justify-center border-r border-black mr-2 lg:mr-4">
+                        10</td>
+                    <td class="py-4 flex items-center font-bold text-sm lg:text-base w-3/5 lg:w-auto grow">
+                        <img class="rounded-full w-12 h-12 mr-2 lg:mr-4"
+                            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art16.jpg"
+                            alt="細胞小將">
+                        細胞小將
+                    </td>
+                    <td class="py-4 flex items-center text-xl w-2/5 lg:w-[10%] text-center">
+                        <i class="fa-brands fa-ethereum mr-2"></i>
+                        420.20
+                    </td>
+                    <td class="hidden lg:block py-4 text-green text-xl w-[10%] text-center">+54.49%</td>
+                    <td class="hidden lg:block py-4 text-orange text-xl w-[10%] text-center">-12.43%</td>
+                    <td class="hidden lg:flex py-4 items-center text-xl w-[10%] justify-center">
+                        <i class="fa-brands fa-ethereum mr-2"></i>
+                        2.90
+                    </td>
+                    <td class="hidden lg:block py-4 text-xl w-[10%] text-center">32.1K</td>
+                    <td class="hidden lg:block py-4 text-xl w-[10%] text-center">1000</td>
+                    <td>
+                        <a href="#" id="add-10"
+                            class="black-rb-big-trian w-[16px] h-[16px] absolute right-0 bottom-0 text-white lg:hidden">
+                            <span class="material-icons text-xl absolute right-0 bottom-0">add</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#" id="remove-10"
+                            class="orange-rb-big-trian w-[16px] h-[16px] absolute right-0 bottom-0 text-white hidden lg:hidden">
+                            <span class="material-icons text-xl absolute right-0 bottom-0">remove</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr class="lg:hidden border-l border-r border-black py-4 w-full hidden" id="tr-10">
+                    <td class="flex items-center justify-center flex-wrap py-4">
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm text-TC">24h%</p>
+                            <p class="text-green text-xl">+54.49%</p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm text-TC">7d%</p>
+                            <p class="text-orange text-xl">-12.43%</p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">地板價</p>
+                            <p class="flex items-center text-xl justify-center">
+                                <i class="fa-brands fa-ethereum mr-2"></i>
+                                2.90
+                            </p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">擁有者</p>
+                            <p class="flex items-center text-xl justify-center">
+                                32.1K
+                            </p>
+                        </div>
+                        <div class="w-[32%] text-center">
+                            <p class="mb-2 text-sm">作品數量</p>
+                            <p class="flex items-center text-xl justify-center">
+                                1000
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</section>

@@ -33,9 +33,12 @@ module.exports = {
       'green':'#53C139',
       'orange' : '#E6553B',
       'bgcolor' :'#F0F0F0',
-      'gray':'#808080',
       'white' : '#ffffff',
       'black' : '#000000',
+      'gray': {
+        DEFAULT:'#808080',
+        900: '#111827',
+      },
     },
 
     extend: {},

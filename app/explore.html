@@ -1,0 +1,609 @@
+---
+title: outside-bird
+layout: ./app/layout.ejs
+engine: ejs
+current: outside-bird
+---
+<section class="mt-6 lg:mt-10 mb-10 lg:mb-20">
+    <div class="container sm:container md:container lg:container xl:container 2xl:container">
+        <div class="lg:flex lg:-mx-3">
+            <nav class="hidden lg:block lg:px-3 lg:w-1/4">
+                <ul class="border border-black bg-white">
+                    <!--網路-->
+                    <li class="p-6 border-b border-black">
+                        <div class="flex items-center justify-between">
+                            <h4 class="font-bold">網路</h4>
+                            <a href="#" class="leading-none" id="internet">
+                                <span class="material-icons">
+                                    expand_less
+                                </span>
+                                <span class="material-icons hidden">
+                                    expand_more
+                                </span>
+                            </a>
+                        </div>
+                        <ul class="space-y-2 mt-4" id="internet-list">
+                            <li class="flex justify-between">
+                                <label for="ETH">以太坊</label>
+                                <input type="checkbox" id="ETH">
+                            </li>
+                            <li class="flex justify-between">
+                                <label for="BNB">BNB 智能鏈</label>
+                                <input type="checkbox" id="BNB" checked>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--狀態-->
+                    <li class="p-6 border-b border-black">
+                        <div class="flex items-center justify-between">
+                            <h4 class="font-bold">狀態</h4>
+                            <a href="#" class="leading-none" id="state">
+                                <span class="material-icons">
+                                    expand_less
+                                </span>
+                                <span class="material-icons hidden">
+                                    expand_more
+                                </span>
+                            </a>
+                        </div>
+                        <ul class="space-y-2 mt-4" id="state-list">
+                            <li class="flex justify-between">
+                                <label for="only-display">僅展示</label>
+                                <input type="checkbox" id="only-display">
+                            </li>
+                            <li class="flex justify-between">
+                                <label for="selling">拍賣中</label>
+                                <input type="checkbox" id="selling" checked>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--價格-->
+                    <li class="p-6 border-b border-black">
+                        <div class="flex items-center justify-between">
+                            <h4 class="font-bold">價格</h4>
+                            <a href="#" class="leading-none" id="price">
+                                <span class="material-icons">
+                                    expand_less
+                                </span>
+                                <span class="material-icons hidden">
+                                    expand_more
+                                </span>
+                            </a>
+                        </div>
+                        <div class="mt-4 flex justify-between items-start xl:items-center flex-col xl:flex-row" id="price-list">
+                            <select name="幣種" id="" class="p-2 w-[73px] lg:mb-2 xl:mb-0 xl:grow xl:mr-2">
+                                <option value="ETH">ETH</option>
+                                <option value="BMB">BMB</option>
+                            </select>
+                            <div>
+                                <input type="text" class="p-2 w-[73px]">
+                                <span>-</span>
+                                <input type="text" class="p-2 w-[73px]">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="mt-6 ml-6">
+                        <h3 class="text-gray">屬性</h3>
+                    </li>
+
+                    <!--品種-->
+                    <li class="p-6">
+                        <div class="flex items-center justify-between">
+                            <h4 class="font-bold">品種</h4>
+                            <a href="#" class="leading-none" id="variety">
+                                <span class="material-icons">
+                                    expand_less
+                                </span>
+                                <span class="material-icons hidden">
+                                    expand_more
+                                </span>
+                            </a>
+                        </div>
+                        <ul class="space-y-2 mt-4" id="variety-list">
+                            <li class="flex justify-between">
+                                <label for="bird-1">八哥</label>
+                                <input type="checkbox" id="bird-1">
+                            </li>
+                            <li class="flex justify-between">
+                                <label for="bird-2">虎皮鸚鵡</label>
+                                <input type="checkbox" id="bird-2" checked>
+                            </li>
+                            <li class="flex justify-between">
+                                <label for="bird-3">太平鳥</label>
+                                <input type="checkbox" id="bird-3">
+                            </li>
+                            <li class="flex justify-between">
+                                <label for="bird-4">畫眉鳥</label>
+                                <input type="checkbox" id="bird-4">
+                            </li>
+                        </ul>
+                    </li>
+                    <!--數量-->
+                    <li class="p-6">
+                        <div class="flex items-center justify-between">
+                            <h4 class="font-bold">鳥的數量</h4>
+                            <a href="#" class="leading-none" id="">
+                                <span class="material-icons">
+                                    expand_less
+                                </span>
+                                <span class="material-icons hidden">
+                                    expand_more
+                                </span>
+                            </a>
+                        </div>
+                    </li>
+                    <!--是否有花草-->
+                    <li class="p-6">
+                        <div class="flex items-center justify-between">
+                            <h4 class="font-bold">是否有花草</h4>
+                            <a href="#" class="leading-none" id="">
+                                <span class="material-icons">
+                                    expand_less
+                                </span>
+                                <span class="material-icons hidden">
+                                    expand_more
+                                </span>
+                            </a>
+                        </div>
+                    </li>
+                    <!--鳥的顏色-->
+                    <li class="p-6">
+                        <div class="flex items-center justify-between">
+                            <h4 class="font-bold">鳥的顏色</h4>
+                            <a href="#" class="leading-none" id="">
+                                <span class="material-icons">
+                                    expand_less
+                                </span>
+                                <span class="material-icons hidden">
+                                    expand_more
+                                </span>
+                            </a>
+                        </div>
+                    </li>
+
+                </ul>
+            </nav>
+            <div class="w-full lg:w-3/4 lg:px-3">
+                <h3 class="mb-1">
+                    <img class="w-8 h-8 rounded-full mr-4"
+                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/artist03.jpg" alt="創作者">
+                    Michael
+                </h3>
+                <div class="lg:flex justify-between items-center mb-10">
+                    <div class="lg:w-1/2 mb-4 lg:mb-0">
+                        <h2 class="font-bold text-4xl">我家外面的鳥</h2>
+                        <p>家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+                    </div>
+                    <ul class="flex bg-white text-center lg:w-[49%] border border-black">
+                        <li class="px-2 py-4 w-1/4 relative
+                        after:content-[''] after:h-1/4 after:absolute after:w-px after:bg-black after:right-0 after:bottom-0
+                        before:content-[''] before:h-1/4 before:absolute before:w-px before:bg-black before:right-0 before:top-0
+                        ">
+                            <p class="mb-1 lg:mb-2">項目</p>
+                            <p>6.4k</p>
+                        </li>
+                        <li class="px-2 py-4 w-1/4 relative
+                        after:content-[''] after:h-1/4 after:absolute after:w-px after:bg-black after:right-0 after:bottom-0
+                        before:content-[''] before:h-1/4 before:absolute before:w-px before:bg-black before:right-0 before:top-0">
+                            <p class="mb-1 lg:mb-2">擁有者</p>
+                            <p>2.5 k</p>
+                        </li>
+                        <li class="px-2 py-4 w-1/4 relative
+                        after:content-[''] after:h-1/4 after:absolute after:w-px after:bg-black after:right-0 after:bottom-0
+                        before:content-[''] before:h-1/4 before:absolute before:w-px before:bg-black before:right-0 before:top-0">
+                            <p class="mb-1 lg:mb-2">底價</p>
+                            <p class="flex justify-center items-center"><i class="fa-brands fa-ethereum mr-1"></i>1.38 k</p>
+                        </li>
+                        <li class="px-2 py-4 w-1/4">
+                            <p class="mb-1 lg:mb-2">總額</p>
+                            <p>2.8 k</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex justify-end">
+                    <a class="inline-block px-10 lg:px-6 py-2 bg-white mb-6 lg:mb-10 ml-auto border borde-black hover:opacity-50" href="#">
+                        <div class="flex items-center justify-center">
+                            <p>最新上架</p>
+                            <i class="fa-solid fa-sort ml-2"></i>
+                        </div>
+                    </a>
+                </div>
+                <ul class="flex flex-col flex-wrap h-[878px] lg:h-[907px] gap-y-4 lg:gap-y-12 -mx-3">
+                    <!--1-->
+                    <li class="w-1/2 lg:w-1/3 px-3 order-1">
+                        <div class="bg-white p-2 lg:p-6 group">
+                            <div
+                                class="bg-[url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art20.jpg?raw=true')] bg-cover bg-center h-[139px] lg:h-[254px]">
+                                <div class="lg:p-4 lg:group-hover:bg-black/60 h-full">
+                                    <div
+                                        class="lg:border border-white h-full hidden lg:group-hover:flex flex-col justify-between lg:p-4 duration-300">
+                                        <div class="text-white">
+                                            <p>唯一想擁有的人，唯一不可以擁有的</p>
+                                            <div class="flex items-center lg:mt-4">
+                                                <i class="fa-brands fa-ethereum"></i>
+                                                <p class="ml-2">300</p>
+                                            </div>
+                                        </div>
+                                        <a href="love-each-other.html"
+                                            class="text-lg bg-white px-8 xl:px-10 2xl:px-12 py-2 leading-none border border-black relative orange-trian ml-auto hover:text-white hover:bg-orange hover:black-rb-trian duration-300">MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm lg:text-base lg:font-bold p-2 lg:py-4 lg:p-0 lg:border-b boder-black">區塊戀-他的私生活</p>
+                    </li>
+                    <!--2-->
+                    <li class="w-1/2 lg:w-1/3 px-3 order-2 lg:order-3">
+                        <div class="bg-white p-2 lg:p-6 group">
+                            <div
+                                class="bg-[url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art22.jpg?raw=true')] bg-cover bg-center h-[151px] lg:h-[254px]">
+                                <div class="lg:p-4 lg:group-hover:bg-black/60 h-full">
+                                    <div
+                                        class="lg:border border-white h-full hidden lg:group-hover:flex flex-col justify-between lg:p-4 duration-300">
+                                        <div class="text-white">
+                                            <p>唯一想擁有的人，唯一不可以擁有的</p>
+                                            <div class="flex items-center lg:mt-4">
+                                                <i class="fa-brands fa-ethereum"></i>
+                                                <p class="ml-2">300</p>
+                                            </div>
+                                        </div>
+                                        <a href="love-each-other.html"
+                                            class="text-lg bg-white px-8 xl:px-10 2xl:px-12 py-2 leading-none border border-black relative orange-trian ml-auto hover:text-white hover:bg-orange hover:black-rb-trian duration-300">MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm lg:text-base lg:font-bold p-2 lg:py-4 lg:p-0 lg:border-b boder-black">夏娃的醜聞</p>
+                    </li>
+                    <!--3-->
+                    <li class="w-1/2 lg:hidden px-3 order-1">
+                        <div class="bg-white p-2 lg:p-6 group">
+                            <div
+                                class="bg-[url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art27.jpg?raw=true')] bg-cover bg-center h-[93px]">
+                                <div class="lg:p-4 lg:group-hover:bg-black/60 h-full">
+                                    <div
+                                        class="lg:border border-white h-full hidden lg:group-hover:flex flex-col justify-between lg:p-4 duration-300">
+                                        <div class="text-white">
+                                            <p>唯一想擁有的人，唯一不可以擁有的</p>
+                                            <div class="flex items-center lg:mt-4">
+                                                <i class="fa-brands fa-ethereum"></i>
+                                                <p class="ml-2">300</p>
+                                            </div>
+                                        </div>
+                                        <a href="love-each-other.html"
+                                            class="text-lg bg-white px-8 xl:px-10 2xl:px-12 py-2 leading-none border border-black relative orange-trian ml-auto hover:text-white hover:bg-orange hover:black-rb-trian duration-300">MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm lg:text-base lg:font-bold p-2 lg:py-4 lg:p-0 lg:border-b boder-black">藍色啤酒海</p>
+                    </li>
+                    <!--4-->
+                    <li class="w-1/2 lg:w-1/3 px-3 order-2 lg:order-3">
+                        <div class="bg-white p-2 lg:p-6 group">
+                            <div
+                                class="bg-[url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art25.jpg?raw=true')] bg-cover bg-center h-[173px] lg:h-[395px]">
+                                <div class="lg:p-4 lg:group-hover:bg-black/60 h-full">
+                                    <div
+                                        class="lg:border border-white h-full hidden lg:group-hover:flex flex-col justify-between lg:p-4 duration-300">
+                                        <div class="text-white">
+                                            <p>唯一想擁有的人</p>
+                                            <div class="flex items-center lg:mt-4">
+                                                <i class="fa-brands fa-ethereum"></i>
+                                                <p class="ml-2">300</p>
+                                            </div>
+                                        </div>
+                                        <a href="love-each-other.html"
+                                            class="text-lg bg-white px-8 xl:px-10 2xl:px-12 py-2 leading-none border border-black relative orange-trian ml-auto hover:text-white hover:bg-orange hover:black-rb-trian duration-300">MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm lg:text-base lg:font-bold p-2 lg:py-4 lg:p-0 lg:border-b boder-black">沒有人愛我</p>
+                    </li>
+                    <!--5-->
+                    <li class="w-1/2 lg:w-1/3 lg:hidden px-3 order-1">
+                        <div class="bg-white p-2 lg:p-6 group">
+                            <div
+                                class="bg-[url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art22.jpg?raw=true')] bg-cover bg-center h-[192px]">
+                                <div class="lg:p-4 lg:group-hover:bg-black/60 h-full">
+                                    <div
+                                        class="lg:border border-white h-full hidden lg:group-hover:flex flex-col justify-between lg:p-4 duration-300">
+                                        <div class="text-white">
+                                            <p>唯一想擁有的人</p>
+                                            <div class="flex items-center lg:mt-4">
+                                                <i class="fa-brands fa-ethereum"></i>
+                                                <p class="ml-2">300</p>
+                                            </div>
+                                        </div>
+                                        <a href="love-each-other.html"
+                                            class="text-lg bg-white px-8 xl:px-10 2xl:px-12 py-2 leading-none border border-black relative orange-trian ml-auto hover:text-white hover:bg-orange hover:black-rb-trian duration-300">MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm lg:text-base lg:font-bold p-2 lg:py-4 lg:p-0 lg:border-b boder-black">不哭不哭眼淚是珍珠</p>
+                    </li>
+                    <!--6-->
+                    <li class="w-1/2 lg:w-1/3 px-3 order-2 lg:order-2">
+                        <div class="bg-white p-2 lg:p-6 group">
+                            <div
+                                class="bg-[url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art21.jpg?raw=true')] bg-cover bg-center h-[99px] lg:h-[327px]">
+                                <div class="lg:p-4 lg:group-hover:bg-black/60 h-full">
+                                    <div
+                                        class="lg:border border-white h-full hidden lg:group-hover:flex flex-col justify-between lg:p-4 duration-300">
+                                        <div class="text-white">
+                                            <p>唯一想擁有的人，唯一不可以擁有的</p>
+                                            <div class="flex items-center lg:mt-4">
+                                                <i class="fa-brands fa-ethereum"></i>
+                                                <p class="ml-2">300</p>
+                                            </div>
+                                        </div>
+                                        <a href="love-each-other.html"
+                                            class="text-lg bg-white px-8 xl:px-10 2xl:px-12 py-2 leading-none border border-black relative orange-trian ml-auto hover:text-white hover:bg-orange hover:black-rb-trian duration-300">MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm lg:text-base lg:font-bold p-2 lg:py-4 lg:p-0 lg:border-b boder-black">十分鐘就到</p>
+                    </li>
+                    <!--7-->
+                    <li class="w-1/2 lg:w-1/3 px-3 order-1">
+                        <div class="bg-white p-2 lg:p-6 group">
+                            <div
+                                class="bg-[url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art23.jpg?raw=true')] bg-cover bg-center h-[139px] lg:h-[254px]">
+                                <div class="lg:p-4 lg:group-hover:bg-black/60 h-full">
+                                    <div
+                                        class="lg:border border-white h-full hidden lg:group-hover:flex flex-col justify-between lg:p-4 duration-300">
+                                        <div class="text-white">
+                                            <p>唯一想擁有的人，唯一不可以擁有的</p>
+                                            <div class="flex items-center lg:mt-4">
+                                                <i class="fa-brands fa-ethereum"></i>
+                                                <p class="ml-2">300</p>
+                                            </div>
+                                        </div>
+                                        <a href="love-each-other.html"
+                                            class="text-lg bg-white px-8 xl:px-10 2xl:px-12 py-2 leading-none border border-black relative orange-trian ml-auto hover:text-white hover:bg-orange hover:black-rb-trian duration-300">MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm lg:text-base lg:font-bold p-2 lg:py-4 lg:p-0 lg:border-b boder-black">我這樣有美嗎</p>
+                    </li>
+                    <!--8-->
+                    <li class="w-1/2 lg:hidden px-3 order-2">
+                        <div class="bg-white p-2 lg:p-6 group">
+                            <div
+                                class="bg-[url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art22.jpg?raw=true')] bg-cover bg-center h-[195px]">
+                                <div class="lg:p-4 lg:group-hover:bg-black/60 h-full">
+                                    <div
+                                        class="lg:border border-white h-full hidden lg:group-hover:flex flex-col justify-between lg:p-4 duration-300">
+                                        <div class="text-white">
+                                            <p>唯一想擁有的人，唯一不可以擁有的</p>
+                                            <div class="flex items-center lg:mt-4">
+                                                <i class="fa-brands fa-ethereum"></i>
+                                                <p class="ml-2">300</p>
+                                            </div>
+                                        </div>
+                                        <a href="love-each-other.html"
+                                            class="text-lg bg-white px-8 xl:px-10 2xl:px-12 py-2 leading-none border border-black relative orange-trian ml-auto hover:text-white hover:bg-orange hover:black-rb-trian duration-300">MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm lg:text-base lg:font-bold p-2 lg:py-4 lg:p-0 lg:border-b boder-black">我真的受傷了</p>
+                    </li>
+                    <!--9-->
+                    <li class="w-1/3 hidden lg:block px-3 order-2">
+                        <div class="bg-white p-2 lg:p-6 group">
+                            <div
+                                class="bg-[url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art22.jpg?raw=true')] bg-cover bg-center h-[254px]">
+                                <div class="lg:p-4 lg:group-hover:bg-black/60 h-full">
+                                    <div
+                                        class="lg:border border-white h-full hidden lg:group-hover:flex flex-col justify-between lg:p-4 duration-300">
+                                        <div class="text-white">
+                                            <p>唯一想擁有的人，唯一不可以擁有的</p>
+                                            <div class="flex items-center lg:mt-4">
+                                                <i class="fa-brands fa-ethereum"></i>
+                                                <p class="ml-2">300</p>
+                                            </div>
+                                        </div>
+                                        <a href="love-each-other.html"
+                                            class="text-lg bg-white px-8 xl:px-10 2xl:px-12 py-2 leading-none border border-black relative orange-trian ml-auto hover:text-white hover:bg-orange hover:black-rb-trian duration-300">MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm lg:text-base lg:font-bold p-2 lg:py-4 lg:p-0 lg:border-b boder-black">我真的受傷了</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<a href="#"
+class="py-2 px-12 text-white bg-black hover:opacity-80 hover:translate-y-0.5 duration-300 lg:hidden fixed left-[30%] sm:left-[40%] bottom-[20px]"
+id="selection" data-modal-toggle="selection-modal">篩選條件</a>
+
+<div id="selection-modal" tabindex="-1" aria-hidden="true"
+    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full h-full inset-0 h-modal border-orange">
+    <div class="relative w-full max-w-lg h-full lg:h-auto">
+        <!-- Modal content -->
+        <div class="relative bg-white shadow h-full flex flex-col">
+            <!--Modal header-->
+            <div class=" px-2 lg:px-4 py-4 border-b boder-black">
+                <h2 class="text-center text-xl relative">篩選條件</h2>
+                <button type="button" id="selection-close"
+                    class="absolute top-3 right-2.5 text-black hover:text-gray rounded-lg text-sm p-1.5 ml-auto inline-flex items-center"
+                    data-modal-toggle="selection-modal">
+                    <span class="material-icons text-black hover:scale-105">
+                        close
+                    </span>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <ul class="bg-white">
+                <!--網路-->
+                <li class="p-6 border-b border-black">
+                    <div class="flex items-center justify-between">
+                        <h4 class="font-bold">網路</h4>
+                        <a href="#" class="leading-none" id="modal-internet">
+                            <span class="material-icons">
+                                expand_less
+                            </span>
+                            <span class="material-icons hidden">
+                                expand_more
+                            </span>
+                        </a>
+                    </div>
+                    <ul class="space-y-2 mt-4" id="modal-internet-list">
+                        <li class="flex justify-between">
+                            <label for="ETH">以太坊</label>
+                            <input type="checkbox" id="ETH">
+                        </li>
+                        <li class="flex justify-between">
+                            <label for="BNB">BNB 智能鏈</label>
+                            <input type="checkbox" id="BNB" checked>
+                        </li>
+                    </ul>
+                </li>
+                <!--狀態-->
+                <li class="p-6 border-b border-black">
+                    <div class="flex items-center justify-between">
+                        <h4 class="font-bold">狀態</h4>
+                        <a href="#" class="leading-none" id="modal-state">
+                            <span class="material-icons">
+                                expand_less
+                            </span>
+                            <span class="material-icons hidden">
+                                expand_more
+                            </span>
+                        </a>
+                    </div>
+                    <ul class="space-y-2 mt-4" id="modal-state-list">
+                        <li class="flex justify-between">
+                            <label for="only-display">僅展示</label>
+                            <input type="checkbox" id="only-display">
+                        </li>
+                        <li class="flex justify-between">
+                            <label for="selling">拍賣中</label>
+                            <input type="checkbox" id="selling" checked>
+                        </li>
+                    </ul>
+                </li>
+                <!--價格-->
+                <li class="p-6 border-b border-black">
+                    <div class="flex items-center justify-between">
+                        <h4 class="font-bold">價格</h4>
+                        <a href="#" class="leading-none" id="modal-price">
+                            <span class="material-icons">
+                                expand_less
+                            </span>
+                            <span class="material-icons hidden">
+                                expand_more
+                            </span>
+                        </a>
+                    </div>
+                    <div class="mt-4 flex justify-between items-start xl:items-center flex-col xl:flex-row" id="modal-price-list">
+                        <select name="幣種" id="" class="p-2 w-[73px] lg:mb-2 xl:mb-0 xl:grow xl:mr-2">
+                            <option value="ETH">ETH</option>
+                            <option value="BMB">BMB</option>
+                        </select>
+                        <div>
+                            <input type="text" class="p-2 w-[73px]">
+                            <span>-</span>
+                            <input type="text" class="p-2 w-[73px]">
+                        </div>
+                    </div>
+                </li>
+        
+                <li class="mt-6 ml-6">
+                    <h3 class="text-gray">屬性</h3>
+                </li>
+        
+                <!--品種-->
+                <li class="p-6">
+                    <div class="flex items-center justify-between">
+                        <h4 class="font-bold">品種</h4>
+                        <a href="#" class="leading-none" id="modal-variety">
+                            <span class="material-icons">
+                                expand_less
+                            </span>
+                            <span class="material-icons hidden">
+                                expand_more
+                            </span>
+                        </a>
+                    </div>
+                    <ul class="space-y-2 mt-4" id="modal-variety-list">
+                        <li class="flex justify-between">
+                            <label for="bird-1">八哥</label>
+                            <input type="checkbox" id="bird-1">
+                        </li>
+                        <li class="flex justify-between">
+                            <label for="bird-2">虎皮鸚鵡</label>
+                            <input type="checkbox" id="bird-2" checked>
+                        </li>
+                        <li class="flex justify-between">
+                            <label for="bird-3">太平鳥</label>
+                            <input type="checkbox" id="bird-3">
+                        </li>
+                        <li class="flex justify-between">
+                            <label for="bird-4">畫眉鳥</label>
+                            <input type="checkbox" id="bird-4">
+                        </li>
+                    </ul>
+                </li>
+                <!--數量-->
+                <li class="p-6">
+                    <div class="flex items-center justify-between">
+                        <h4 class="font-bold">鳥的數量</h4>
+                        <a href="#" class="leading-none" id="">
+                            <span class="material-icons">
+                                expand_less
+                            </span>
+                            <span class="material-icons hidden">
+                                expand_more
+                            </span>
+                        </a>
+                    </div>
+                </li>
+                <!--是否有花草-->
+                <li class="p-6">
+                    <div class="flex items-center justify-between">
+                        <h4 class="font-bold">是否有花草</h4>
+                        <a href="#" class="leading-none" id="">
+                            <span class="material-icons">
+                                expand_less
+                            </span>
+                            <span class="material-icons hidden">
+                                expand_more
+                            </span>
+                        </a>
+                    </div>
+                </li>
+                <!--鳥的顏色-->
+                <li class="p-6">
+                    <div class="flex items-center justify-between">
+                        <h4 class="font-bold">鳥的顏色</h4>
+                        <a href="#" class="leading-none" id="">
+                            <span class="material-icons">
+                                expand_less
+                            </span>
+                            <span class="material-icons hidden">
+                                expand_more
+                            </span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <div class="lg:mb-8">
+                <a href="#" id="selection-link"
+                    class="text-lg text-center py-3 text-white bg-orange border border-black hover:text-black hover:scale-y-105 duration-300"
+                    data-modal-toggle="selection-modal">確認</a>
+            </div>
+        </div>
+    </div>
+</div>

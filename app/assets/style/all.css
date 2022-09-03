@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Paytone+One&family=Squada+One&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -31,12 +31,16 @@
         white-space: nowrap;
         background-size: contain;
         background-repeat: no-repeat;
+        background-position:center;
     }
     .text-TC{
         font-family:"Noto Sans TC";
     }
     .text-vertical{
         writing-mode:vertical-lr;
+    }
+    .text-paytone{
+        font-family:"paytone One";
     }
     .orange-trian:before {
         position: absolute;
@@ -49,7 +53,7 @@
         border-color: transparent #E6553B #E6553B transparent;
     }
 
-    .black-trian:before {
+    .black-rb-trian:before {
         position: absolute;
         content: "";
         bottom: 0;
@@ -58,5 +62,87 @@
         height: 0;
         border: 8px solid;
         border-color: transparent black black transparent;
+    }
+    .black-rb-big-trian:before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border: 16px solid;
+        border-color: transparent black black transparent;
+    }
+    .orange-rb-big-trian:before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border: 16px solid;
+        border-color: transparent #E6553B #E6553B transparent;
+    }
+    .black-lt-trian:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border: 12px solid;
+        border-color: black transparent transparent black;
+    }
+    .black-rt-trian:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border: 12px solid;
+        border-color: black black transparent transparent;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        /* Center slide text vertically */
+        transition: 300ms;
+    }
+
+    .swiper-slide > *{
+        filter: grayscale(100%);
+        transform: scale(0.7);
+    }
+    .swiper-slide-active.swiper-slide > *{
+        filter: none;
+        transform: scale(1);
+    }
+    .swiper-slide.swiper-slide-active h3,
+    .swiper-slide.swiper-slide-active a,
+    .swiper-slide.swiper-slide-active p{
+        display: block;
+    }
+    .swiper-pagination {
+        position: unset;
+    }
+    .swiper-pagination-bullet {
+        border-radius:0;
+        background: #000;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+        width: 16px;
+        background:#E6553B;
+    }
+
+    input[type=checkbox] {
+        color: black;
+    }
+    input[type=checkbox]:focus{
+        --tw-ring-color:black;
     }
 }
