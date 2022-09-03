@@ -810,8 +810,8 @@ img{
 .h-8{
   height: 2rem;
 }
-.h-\[890px\]{
-  height: 890px;
+.h-\[878px\]{
+  height: 878px;
 }
 .h-\[195px\]{
   height: 195px;
@@ -1842,8 +1842,8 @@ input[type=checkbox]:focus{
   .lg\:h-\[909px\]{
     height: 909px;
   }
-  .lg\:h-\[908px\]{
-    height: 908px;
+  .lg\:h-\[907px\]{
+    height: 907px;
   }
   .lg\:h-auto{
     height: auto;
